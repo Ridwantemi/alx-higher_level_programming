@@ -43,7 +43,7 @@ class Square:
         self.__size = value
 
     @property
-        def position(self):
+    def position(self):
         """property of the position of square
         Raises:
             TypeError: if value != tuple of 2 ints >= 0.
