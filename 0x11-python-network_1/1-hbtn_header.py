@@ -15,9 +15,9 @@ import sys
         with urllib.request.urlopen(url) as response:
             x_request_id = response.getheader('X-Request-Id')
             if x_request_id:
-            print("{}".format(x_request_id))
+                print("{}".format(x_request_id))
             else:
-            print("X-Request-Id not found in the response header.")
+                print("X-Request-Id not found in the response header.")
     except urllib.error.URLError as e:
         print("Error fetching URL: {}".format(e))
 
